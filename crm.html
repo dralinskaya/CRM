@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRM</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="modal">
+        <div class="form-container">
+            <h1 class="form-title">Добавить товар</h1>
+            <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST"
+                enctype="application/x-www-form-urlencoded" target="_blank">
+                <fieldset class="form__fieldset">
+                    <label class="label">
+                        <span class="label__text">Наименование</span>
+                        <input class="form__input" type="text" name="name" required>
+                    </label>
+                    <label class="label">
+                        <span class="label__text">Категория</span>
+                        <input class="form__input" type="text" name="category" required>
+                    </label>
+                    <label class="label">
+                        <span class="label__text">Единицы измерения</span>
+                        <input class="form__input" type="text" name="units" required>
+                    </label>
+                    <label for="discount" class="label__text">Дисконт</label>
+                    <div class="fieldgroup">
+                        <input class="form__checkbox" type="checkbox">
+                        <input class="form__input" type="text" name="discount" id="discount" disabled required>
+                    </div>
+                    <label class="label">
+                        <span class="label__text">Описание</span>
+                        <textarea class="form__input" name="description" required rows="5"></textarea>
+                    </label>
+                    <label class="label">
+                        <span class="label__text">Количество</span>
+                        <input class="form__input" type="number" name="count" required>
+                    </label>
+                    <label class="label">
+                        <span class="label__text">Цена</span>
+                        <input class="form__input" type="number" name="price" required>
+                    </label>
+                </fieldset>
+                <button class="button button--type--submit" type="submit" name="submit">Добавить товар</button>
+            </form>
+        </div>
+        <button class="button button--type--close" type="button">
+            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round" />
+                <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </button>
+    </div>
+</body>
+
+</html>

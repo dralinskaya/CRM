@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Inter;
+    src: local('Inter'),
+        url(../fonts/Inter-SemiBold.ttf);
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: local('Inter'),
+        url(../fonts/Inter-Bold.ttf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #fff;
+    font-family: Inter, Arial, sans-serif;
+    color: #6E6893;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+/*
+Доступно скрываю элементы
+*/
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
